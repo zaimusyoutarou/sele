@@ -21,5 +21,8 @@ print(element.text)
 @route("/")
 def hello_world():
         return element.text
+@route("/hello")
+def hello_world():
+        return "hello"
 
 run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
